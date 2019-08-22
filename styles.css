@@ -1,0 +1,393 @@
+html {
+    scroll-behavior: smooth;
+
+}
+
+html body {
+    font-family: 'Muli', sans-serif; 
+}
+
+
+h1, p {
+    font-weight: lighter;
+}
+
+p {
+    color: rgb(81, 81, 81);
+}
+
+/**
+* Header-Bereich
+*/
+
+.website {
+    max-width: 1300px;
+    margin: 0 auto 0 auto;
+}
+
+.header {
+    height: 250px;
+    width: auto;
+    background-color: white;
+   
+}
+
+.header-navbar-links {
+    float: right;
+    margin-top: 0px;
+    position: relative;
+    bottom: 130px;
+    margin-right: 150px;
+
+}
+
+.header-navbar-links a{
+    color:  rgb(81, 81, 81);
+    text-decoration: none;
+    transition: all 0.5s;
+    font-size: 130%; 
+    font-weight: lighter;       
+}
+.header-navbar-links a:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.header-navbar-links li {
+    float: left;
+    list-style-type: none;
+    margin-left: 30px;
+    
+}
+
+.header-brand-wrapper {
+    margin-top: 40px;
+    margin-left: 40px;
+   
+    font-weight:bold;
+    line-height: 1;
+    position: relative;
+    bottom: 0px;
+    display: inline-block;
+    
+}
+.header-brand {
+    height: 200px;
+    width: auto;
+} 
+.header-brand:hover {
+    cursor: pointer;
+    
+}
+
+.header-img {
+    background-image: url("img/Titelbilddunkel.png");
+    background-position: 50% 30%;
+    background-size: cover;
+    height: 700px;
+    background-attachment: fixed;
+}
+
+.header-img-text {
+    color: rgb(254, 225, 153);
+    font-weight: lighter;
+    font-family: 'Poiret One', cursive;
+    font-size: 500%;
+    text-align: center;
+    padding-top: 20%;
+    margin-top: 0px;
+    margin-bottom:0px;
+
+}
+
+.service, 
+.service-verkauf {
+    padding: 150px 150px;
+}
+
+.service-verkauf {
+    background-color: rgb(253, 253, 253);
+}
+
+.service-container {
+    height: auto;
+    width: 90%;
+    margin: auto auto;
+}
+
+.service-icon {
+    margin: auto 80px;
+    font-size: 700%;
+    color: rgb(81, 81, 81);
+    display: inline-block;
+}
+
+.service-text {
+    width: 60%;
+    height: auto;
+    display: inline-block;
+}
+
+
+/* 
+Products-Bereich
+*/
+
+.products {
+    background-image: url("img/Sternenhimmel.jpg");
+    height: 800px;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+  
+   
+}
+
+.products-text {
+
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 5%;
+    
+}
+
+
+.transparent-background {
+    background-color: rgb(0, 0, 0, 0.5);
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+  .dropbtn {
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.0);
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    margin-bottom: 7%;
+    padding: 0 0 0 0;
+    color: white;
+    cursor: pointer;
+    box-shadow: none;
+    border: none;
+    font-size: 400%;
+    
+    
+  }  
+
+  
+
+.dropdown-content {
+    padding: 0px 80px 0px 80px;
+    height: 0px;
+    background-color:rgb(0, 0, 0, 0.8);
+    overflow: auto;
+    font-size: 150%;
+}
+
+.dropdown-height {
+    height: 400px;
+    animation: dropdownheight 1s forwards; 
+}
+
+@keyframes dropdownheight {
+    from { 
+        height: 0px;
+    }
+    
+    to {
+        height: 400px;
+    };
+}
+
+.inverse-dropdown-height {
+    animation: inversedropdownheight 1s forwards; 
+}
+
+@keyframes inversedropdownheight {
+    from { 
+        height: 400px;
+    }
+    to {
+        height: 0px;
+    };
+} 
+
+
+/*
+* Weisser Übergangn mit Glühbirne
+*/
+
+.whiteCrossing {
+    height: 250px;
+    background-color: white;
+    
+}
+
+.whiteCrossingContainer {
+    display: block;
+    margin: auto 0;
+    text-align: center;
+    padding-top: 95px;
+}
+
+.whiteCrossingIcon {
+    text-align: center;
+    font-size: 300%;
+    display: inline-block;
+    padding: 0px 30px;
+    transition: all 2s ease-in-out;
+    color: rgb(81, 81, 81);
+}
+
+.whiteCrossingIcon:hover {
+    transform: rotate(360deg);
+    color: rgb(254, 225, 153);
+}
+
+.whiteCrossingStripe {
+    color: rgb(81, 81, 81);
+    width: 300px;
+    height: 2px;
+    background-color: rgb(81, 81, 81);
+    display: inline-block;
+}
+
+/*
+*About us
+*/
+
+
+.aboutUs {
+    padding: 150px 150px;
+    background: linear-gradient(140deg, rgb(80, 79, 79), rgb(121, 121, 121),rgb(80, 79, 79));
+}
+
+.aboutUsTitle,
+.contactTitle {
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.aboutUsContainer {
+    margin-right: 0px;
+    text-align: center;
+    max-width: 100%;
+    height: 450px;
+}
+
+.roger,
+.nirmal {
+    float: left;
+    width: 50%;
+    height: 100%;
+    min-width: 250px;
+}
+
+.portrait{
+    height: 250px;
+    border: solid 3px white;
+    margin: 0 auto;
+    
+}
+
+.name {
+    color: white;
+    font-weight: bold;
+    font-size: 120%;
+    margin: 50px 0 30px 0;
+}
+
+.personalData {
+    color: white;
+    margin: 5px;
+}
+
+.agb {
+    text-align: center;
+    margin-top: 100px;
+ 
+}
+
+.agb a {
+    color: white;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.agb a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/*
+* Contact
+*/
+
+.contact {
+    padding: 150px 150px;
+    background: linear-gradient(140deg, rgb(0, 0, 0), rgb(39, 39, 39),rgb(0, 0, 0));
+}
+
+.contactContainer {
+    text-align: center;
+    max-width: 100%;
+    height: 450px;
+}
+.contactData,
+.googleMaps {
+    float: left;
+    width: 45%;
+    height: 100%;
+}
+
+.contactData {
+    margin-right: 30px;
+}
+.googleMaps {
+    margin-left: 30px;
+}
+
+.contact-icon {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+}
+
+.contact-methods {
+    color: white;
+    list-style-type: none;
+    padding-left: 0px;
+    margin-top:0px;
+}
+
+.contact-methods li{
+    width: 100%;
+    font-weight: lighter;
+    height: 2.5em;
+}
+
+.contact-methods li .fa {
+font-size: 150%;
+}
+
+.contact-adress {
+    margin-top: 60px;
+    /* margin-bottom: 60px; */
+}
+
+.contact-öffnungszeiten {
+    margin-top: 60px;
+}
+.contact-adress p,
+.contact-öffnungszeiten p {
+    color: white;
+    font-weight: lighter;
+    margin-bottom: 0px;
+}
+

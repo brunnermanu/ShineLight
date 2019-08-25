@@ -12,18 +12,14 @@ h1, p {
     font-weight: lighter;
 }
 
-p {
-    color: rgb(81, 81, 81);
-}
-
 /**
 * Header-Bereich
 */
 
-.website {
+/* .website {
     max-width: 1300px;
     margin: 0 auto 0 auto;
-}
+} */
 
 .header {
     height: 250px;
@@ -100,9 +96,58 @@ p {
 
 }
 
+/* 
+Service-Bereich
+*/
+
+/* .service-part {
+    max-width: 1300px;
+    height: 1000px;
+    margin: 0 auto;
+}
+.service-container,
+.service-container-grau  {
+    height: auto;
+    width: 33.333%;
+    float: left;
+    padding-top:150px;
+}
+
+.service-icon {
+    text-align: center;
+    font-size: 700%;
+    color: rgb(81, 81, 81);
+    margin-bottom: 10px;
+    
+}
+
+.service-text {
+    padding: 50px;
+    height: auto;
+    
+}
+
+.service-text h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service-text p {
+    font-size: 150%;
+} */
+
+/* 
+Service-Bereich
+*/
+
+.service-part {
+    max-width: 1300px;
+    margin: 0 auto 0 auto;
+}
 .service, 
 .service-verkauf {
-    padding: 150px 150px;
+    padding: 100px 150px;
+   
 }
 
 .service-verkauf {
@@ -110,22 +155,31 @@ p {
 }
 
 .service-container {
-    height: auto;
-    width: 90%;
-    margin: auto auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content:space-evenly;
+   
 }
 
 .service-icon {
-    margin: auto 80px;
     font-size: 700%;
-    color: rgb(81, 81, 81);
-    display: inline-block;
+    flex-basis: 150px;
+    text-align: center;
+   
 }
 
 .service-text {
     width: 60%;
     height: auto;
-    display: inline-block;
+    text-align: center;
+    
+}
+
+.service-text h1 {
+    text-align: center;
 }
 
 
@@ -180,9 +234,10 @@ Products-Bereich
   
 
 .dropdown-content {
+    color: white;
     padding: 0px 80px 0px 80px;
     height: 0px;
-    background-color:rgb(0, 0, 0, 0.8);
+    background-color:rgb(0, 0, 0, 0.9);
     overflow: auto;
     font-size: 150%;
 }
@@ -196,7 +251,6 @@ Products-Bereich
     from { 
         height: 0px;
     }
-    
     to {
         height: 400px;
     };
@@ -217,7 +271,7 @@ Products-Bereich
 
 
 /*
-* Weisser Übergangn mit Glühbirne
+* Weisser Übergang mit Glühbirne
 */
 
 .whiteCrossing {
@@ -262,11 +316,10 @@ Products-Bereich
 
 .aboutUs {
     padding: 150px 150px;
-    background: linear-gradient(140deg, rgb(80, 79, 79), rgb(121, 121, 121),rgb(80, 79, 79));
+    background: linear-gradient(140deg, rgb(254, 225, 153), rgb(235, 173, 59),rgb(254, 225, 153));
 }
 
-.aboutUsTitle,
-.contactTitle {
+.aboutUsTitle {
     color: white;
     margin-top: 0px;
     margin-bottom: 100px;
@@ -334,10 +387,27 @@ Products-Bereich
     background: linear-gradient(140deg, rgb(0, 0, 0), rgb(39, 39, 39),rgb(0, 0, 0));
 }
 
+.contactTitle {
+    color: white;
+    margin-top: 0px;
+    /* margin-bottom: 100px; */
+    font-weight: lighter;
+    text-align: center;
+}
+
+.contact-subheading {
+    color:rgb(255, 255, 255);
+    font-weight: lighter;
+    margin-bottom: 100px;
+    text-align: center;
+
+}
+
 .contactContainer {
     text-align: center;
     max-width: 100%;
     height: 450px;
+    
 }
 .contactData,
 .googleMaps {
@@ -378,7 +448,6 @@ font-size: 150%;
 
 .contact-adress {
     margin-top: 60px;
-    /* margin-bottom: 60px; */
 }
 
 .contact-öffnungszeiten {
@@ -389,5 +458,55 @@ font-size: 150%;
     color: white;
     font-weight: lighter;
     margin-bottom: 0px;
+}
+
+.handelspartner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1300px;
+    margin: 0 auto 0 auto;
+}
+
+.partnerBlock {
+    padding: 50px;
+    flex-basis: 300px;
+   
+}
+
+.partnerLogo {
+    height: 100px;
+    text-align: center;
+}
+
+.partnerLogo-Bild {
+    height: 100%;
+
+}
+
+.partnerText {
+    margin: 40px 0 40px 0;
+}
+
+.partnerLink {
+    text-align: center;
+   
+}
+
+.partnerButton {
+    height: 45px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.partnerButton:hover {
+    background-color: rgb(254, 225, 153);
+    cursor: pointer;
+}
+
+.partnerButton a {
+    color: unset;
+    text-decoration: none;
 }
 

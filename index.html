@@ -239,6 +239,13 @@
 </div>
 <script>
     // Get the button, and when the user clicks on it, execute myFunction
+
+      $(document).ready(function() {
+            $('.dropbtn').on("click", function() {
+                dropdownFn();
+            });
+       
+    })
     
     function dropdownFn() {
         var dropdownOne = $('.dropdown-content')
@@ -255,12 +262,7 @@
         }
 
     }
-    $(document).ready(function() {
-            $('.dropbtn').on("click", function() {
-                dropdownFn();
-            });
-       
-    })
+  
 </script>
 </body>     
 </html>

@@ -38,11 +38,23 @@ h1, p {
    
 }
 
+@media (max-width:312px) {
+    .header {
+        height: 350px;
+        flex-flow: row wrap;
+    }
+}
+
 .header-navbar-links {
        margin-top: 0px;
-       bottom: 130px;
        margin-right: 150px;
+       padding-inline-start: 0px;
+}
 
+@media (max-width:800px) {
+    .header-navbar-links {
+        margin-top: 30px; 
+    }
 }
 
 .header-navbar-links a{
@@ -52,6 +64,13 @@ h1, p {
     font-size: 130%; 
     font-weight: lighter;       
 }
+
+@media (max-width:845px) {
+    .header-navbar-links a{
+        font-size: 115%; 
+    }
+}
+
 .header-navbar-links a:hover {
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -64,39 +83,63 @@ h1, p {
     
 }
 
+@media (max-width:800px) {
+    .header-navbar-links li {
+        float: none;
+    }
+}
+
 .header-brand-wrapper {
     margin-top: 40px;
     margin-left: 40px;
-    font-weight: bold;
-    line-height: 1;
-    bottom: 0px;
-    
-    
 }
+
+@media (max-width:550px) {
+    .header-brand-wrapper {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+}
+
 .header-brand {
     height: 200px;
     width: auto;
 } 
+
+@media (max-width:550px) {
+    .header-brand {
+        height: 150px;
+       
+    }
+}
+
+@media (max-width:414px) {
+    .header-brand {
+        height: 120px;
+       
+    }
+}
+
+@media (max-width:312px) {
+    .header-brand {
+        height: 150px;
+        text-align: center;
+        
+    }
+}
+
+
 .header-brand:hover {
     cursor: pointer;
     
 }
 
-.header-img,
-.header-img-handelspartner {
-    
+.header-img {
+    background-image: url("img/Titelbilddunkel.png");
     background-position: 50% 30%;
     background-size: cover;
     height: 700px;
     background-attachment: fixed;
-}
-
-.header-img {
-    background-image: url("img/Titelbilddunkel.png");
-}
-
-.header-img-handelspartner {
-    background-image: url("img/handshakedark.png");
 }
 
 .header-img-text {
@@ -109,6 +152,20 @@ h1, p {
     margin-top: 0px;
     margin-bottom:0px;
 
+}
+
+@media (max-width:550px) {
+    .header-img-text {
+        padding-top: 200px;
+       
+    }
+}
+
+@media (max-width:312px) {
+    .header-img-text {
+        padding-top: 100px;
+       
+    }
 }
 
 /* 
@@ -125,17 +182,19 @@ Service-Bereich
    
 }
 
-/* @media (max-width:845px) {
+@media (max-width:845px) {
     .service, 
     .service-verkauf {
         padding: 80px 50px;
     }
+}
 
 @media (max-width:450px) {
     .service, 
     .service-verkauf {
-        padding: 80px 40px;
-    } */
+        padding: 70px 20px;
+    }
+}
 
 .service-verkauf {
     background-color: rgb(253, 253, 253);
@@ -157,11 +216,11 @@ Service-Bereich
    
 }
 
-/* @media (max-width:845px) {
+ @media (max-width:845px) {
     .service-icon{
         font-size: 500%;
-        flex-basis: 150px;
-    } */
+    } 
+} 
 
 .service-text {
     height: auto;
@@ -187,6 +246,14 @@ Products-Bereich
     background-size: cover;
   
    
+}
+
+.products-LED {
+    background-image: url("img/LEDLeuchten.jpg");
+    height: 800px;
+    width: 100%;
+    position: relative;
+    background-size: cover;
 }
 
 .products-text {
@@ -231,7 +298,41 @@ Products-Bereich
     height: 0px;
     background-color:rgb(0, 0, 0, 0.9);
     overflow: auto;
-    font-size: 150%;
+    font-size: 130%;
+}
+
+.dropdown-content p {
+
+    margin: 70px 100px 0px 100px;
+}
+
+@media (max-width:800px) {
+    .dropdown-content{
+        padding: 0px 70px 0px 70px;
+    } 
+}
+@media (max-width:450px) {
+    .dropdown-content{
+        padding: 0px 30px 0px 30px;
+        position: static;
+    } 
+}
+
+@media (max-width:1280px) {
+    .dropdown-content p{
+        margin: 70px 50px 0px 50px;
+    } 
+}
+@media (max-width:800px) {
+    .dropdown-content p{
+        margin: 70px 30px 0px 30px;
+    } 
+}
+@media (max-width:450px) {
+    .dropdown-content p{
+        margin: 50px 10px 0px 10px;
+        position: static;
+    } 
 }
 
 .dropdown-height {
@@ -261,13 +362,32 @@ Products-Bereich
     };
 } 
 
+.gallery-link {
+    margin-top: 90px;
+    margin-bottom: 70px;
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+}
+
+.gallery-link a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+.gallery-link a:hover {
+    cursor: pointer;
+    color:  rgb(254, 225, 153);
+    text-decoration: underline;
+}
 
 /*
 * Weisser Übergang mit Glühbirne
 */
 
 .whiteCrossing {
-    height: 250px;
+    height: 200px;
     background-color: white;
     
 }
@@ -276,12 +396,12 @@ Products-Bereich
     display: block;
     margin: auto 0;
     text-align: center;
-    padding-top: 95px;
+    padding-top: 70px;
 }
 
 .whiteCrossingIcon {
     text-align: center;
-    font-size: 300%;
+    font-size: 250%;
     display: inline-block;
     padding: 0px 30px;
     transition: all 2s ease-in-out;
@@ -301,6 +421,18 @@ Products-Bereich
     display: inline-block;
 }
 
+@media (max-width:860px) {
+    .whiteCrossingStripe{
+        width: 150px;
+    }
+}
+
+@media (max-width:460px) {
+    .whiteCrossingStripe{
+        width: 50px;
+    }
+}
+
 /*
 *About us
 */
@@ -309,6 +441,18 @@ Products-Bereich
 .aboutUs {
     padding: 150px 150px;
     background: linear-gradient(140deg, rgb(254, 225, 153), rgb(235, 173, 59),rgb(254, 225, 153));
+}
+
+@media (max-width:845px) {
+    .aboutUs {
+        padding: 80px 50px;
+    }
+}
+
+@media (max-width:450px) {
+    .aboutUs {
+        padding: 70px 20px;
+    }
 }
 
 .aboutUsTitle {
@@ -377,6 +521,18 @@ Products-Bereich
     background: linear-gradient(140deg, rgb(0, 0, 0), rgb(39, 39, 39),rgb(0, 0, 0));
 }
 
+@media (max-width:845px) {
+    .contact {
+        padding: 80px 50px;
+    }
+}
+
+@media (max-width:450px) {
+    .contact {
+        padding: 70px 20px;
+    }
+}
+
 .contactTitle {
     color: white;
     margin-top: 0px;
@@ -404,6 +560,16 @@ Products-Bereich
     padding: 50px;
     
 }
+
+@media (max-width:450px) {
+    .contactData,
+    .googleMaps {
+        min-width: 270px;
+        padding: 70px 20px;
+    }
+}
+
+
 
 .contact-icon {
     display: inline-block;
@@ -475,6 +641,14 @@ font-size: 150%;
 * Handelspartner
 */
 
+.header-img-handelspartner {
+    background-image: url("img/handshakedark.png");
+    background-position: 80% 0;
+    background-size: cover;
+    height: 700px;
+    background-attachment: fixed;
+}
+
 .handelspartner {
     display: flex;
     flex-direction: row;
@@ -523,5 +697,79 @@ font-size: 150%;
 .partnerButton a {
     color: unset;
     text-decoration: none;
+}
+
+/*
+* Galerie
+*/
+
+.header-img-gallery {
+    background-image: url("img/Kronleuchterdunkel.png");
+    background-position: 80% 0;
+    background-size: cover;
+    height: 700px;
+    background-attachment: fixed;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1300px;
+    margin: 70px auto 70px auto;
+}
+
+
+.galleryBlock {
+    padding: 40px 50px;
+    flex-basis: 300px;
+   
+}
+
+@media (max-width:450px) {
+    .galleryBlock {
+        min-width: 150px;
+        padding: 10px 20px;
+        text-align: center;
+    }
+}
+
+.galleryPhoto {
+    height: 200px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+@media (max-width:450px) {
+    .galleryPhoto {
+      height: 150px;
+    }
+}
+
+@media (max-width:250px) {
+    .galleryPhoto {
+      height: 100px;
+    }
+}
+
+.galleryPhoto:hover {
+    transform: scale(2);
+    
+}
+
+.galleryPhoto-img {
+    height: 100%;
+
+}
+
+.galleryText {
+    margin: 20px 0 20px 0;
+}
+
+@media (max-width:450px) {
+    .galleryText{
+        margin: 20px 10px 20px 10px;
+    }
 }
 

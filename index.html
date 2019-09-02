@@ -14,16 +14,20 @@
     <script src="main.js"></script>
 </head>
 <body>
-<div class="website">
+<!-- <div class="website"> -->
     <header class="header">
         <div class="header-brand-wrapper">
-            <img src="img/LogoWeissUntertitel.png" class= "header-brand" alt="Logo">
+            <a href="index.html"></a>
+                <img src="img/LogoWeissUntertitel.png" class= "header-brand" alt="Logo">
+            </a>
         </div>
     
         <nav class="header-navbar">
             <ul class="header-navbar-links" id="header-navbar-links">
                 <li><a href="#dienstleistungen">Dienstleistungen</a></li>
-                <li><a href="#produkte">Produkte & Handelspartner</a></li>
+                <li><a href="#produkte">Produkte</a></li>
+                <li><a href="handelspartner.html">Handelspartner</a></li>
+                <li><a href="#gallerie">Galerie</a></li>
                 <li><a href="#team">Über uns</a></li>
                 <li><a href="#kontakt">Kontakt</a></li>
             </ul>
@@ -33,50 +37,6 @@
         <h1 class="header-img-text">Glück ist die Energie des Lichts</h1>
     </div>
 
-    <!-- <div class="service-part">
-            <div class="service-container">
-                <div class="service-icon">
-                    <i class="fas fa-pencil-ruler"></i> 
-                </div>
-    
-                <div class="service-text">
-                    <h1>Beratung und Planung</h1>
-                    <p>Mit unserer jahrelangen Erfahrung bekommen Sie fachkompetente Lichtlösungen 
-                        für Ihre Anliegen. Wir erstellen Lichtkonzepte für Ihre Bedürfnisse.
-                    </p>
-                </div>
-            </div>
-        
-        
-            <div class="service-container">
-                <div class="service-icon">
-                    <i class="far fa-handshake"></i>
-                </div>
-
-                <div class="service-text">
-                    <h1>Verkauf</h1>
-                    <p>Wir kalkulieren für Sie die effektiven Kosten und bieten ganzheitliche Licht-Lösungen an. Dabei sind wir nicht auf einen Hersteller fixiert, sondern können auf diverse Hersteller zurückgreifen und somit die guten Konditionen an unsere Kunden weitergeben. 
-                        Sie erhalten von uns also ein gesamtes Paket von verschieden Herstellern und somit auch eine grosse Vielfalt an Möglichkeiten.
-                    </p>
-                </div>
-    
-                
-            </div>
-       
-            <div class="service-container">
-                <div class="service-icon">
-                    <i class="fas fa-crown"></i>
-                </div>
-    
-                <div class="service-text">
-                    <h1>Sonderlösungen</h1>
-                    <p>Auf Grund unserer jahrelangen Erfahrung, sei es mit Metallbauern oder Elektronik Spezialisten,
-                        ist es uns möglich, für Sie objektspezifische Sonderlösungen anzubieten.
-                    </p>
-                </div>
-            </div>
-        
-    </div> -->
     <div class="service-part" id="dienstleistungen">
         <div class="service">
             <div class="service-container">
@@ -181,6 +141,7 @@
                 <p class="name">Roger Odermatt</p>
                 <p class="personalData">Geschäftsführer / Verkauf</p>
                 <p class="personalData">roger.odermatt@shinelight.ch</p>
+                <p class="personalData">041 620 04 00</p>
                 <p class="personalData">079 656 25 01</p>
             </div>
             <div class="nirmal">
@@ -188,6 +149,7 @@
                 <p class="name">Nirmal Fernando</p>
                 <p class="personalData">Projektleiter / Einkauf</p>
                 <p class="personalData">nirmal.fernando@shinelight.ch</p>
+                <p class="personalData">041 620 04 00</p>
                 <p class="personalData">079 XXX XX XX</p>
             </div>
         </div>
@@ -206,7 +168,7 @@
                         <span class="contact-icon">
                             <i class="fa fa-mobile" aria-hidden="true"></i>
                         </span>
-                        041 XXX XX XX
+                        041 620 04 00
                     </li>
                     <li>
                         <span class="contact-icon">
@@ -217,8 +179,8 @@
                 </ul>
                 <div class="contact-öffnungszeiten">
                     <p>Öffnungszeiten:</p>
-                    <p>Montag - Donnerstag: 7:00 - 12:00 / 13:00 - 17:00</p>
-                    <p>Fr 7:00 - 12:00 / 13:00 - 16:00</p>
+                    <p>Montag - Donnerstag  7:00 - 12:00 / 13:00 - 17:00</p>
+                    <p>Fr  7:00 - 12:00 / 13:00 - 16:00</p>
                 </div>
                 <div class="contact-adress">
                     <p>shineLIGHT GmbH</p>
@@ -232,17 +194,16 @@
             </div>
         </div>
     </div>
-</div>
+    <div class="footer">
+        <div class="container">
+            <a href="#">nach oben</a>
+        </div>
+    </div>
+<!-- </div> -->
 </div>
 <script>
     // Get the button, and when the user clicks on it, execute myFunction
-    // document.getElementById("myBtn").onclick = function() {
-    //     dropdownFn()
-    // };
-
-  
-   
-    /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+    
     function dropdownFn() {
         var dropdownOne = $('.dropdown-content')
         if (dropdownOne.hasClass('dropdown-height')) {

@@ -1,3 +1,12 @@
+
+
+
+html,body
+{
+    overflow-x: hidden; 
+}
+
+
 html {
     scroll-behavior: smooth;
 
@@ -5,6 +14,7 @@ html {
 
 html body {
     font-family: 'Muli', sans-serif; 
+    margin: 0px;
 }
 
 
@@ -16,12 +26,12 @@ h1, p {
 * Header-Bereich
 */
 
-/* .website {
-    max-width: 1300px;
-    margin: 0 auto 0 auto;
-} */
 
 .header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
     height: 250px;
     width: auto;
     background-color: white;
@@ -29,11 +39,9 @@ h1, p {
 }
 
 .header-navbar-links {
-    float: right;
-    margin-top: 0px;
-    position: relative;
-    bottom: 130px;
-    margin-right: 150px;
+       margin-top: 0px;
+       bottom: 130px;
+       margin-right: 150px;
 
 }
 
@@ -59,12 +67,10 @@ h1, p {
 .header-brand-wrapper {
     margin-top: 40px;
     margin-left: 40px;
-   
-    font-weight:bold;
+    font-weight: bold;
     line-height: 1;
-    position: relative;
     bottom: 0px;
-    display: inline-block;
+    
     
 }
 .header-brand {
@@ -76,12 +82,21 @@ h1, p {
     
 }
 
-.header-img {
-    background-image: url("img/Titelbilddunkel.png");
+.header-img,
+.header-img-handelspartner {
+    
     background-position: 50% 30%;
     background-size: cover;
     height: 700px;
     background-attachment: fixed;
+}
+
+.header-img {
+    background-image: url("img/Titelbilddunkel.png");
+}
+
+.header-img-handelspartner {
+    background-image: url("img/handshakedark.png");
 }
 
 .header-img-text {
@@ -90,51 +105,11 @@ h1, p {
     font-family: 'Poiret One', cursive;
     font-size: 500%;
     text-align: center;
-    padding-top: 20%;
+    padding-top: 250px;
     margin-top: 0px;
     margin-bottom:0px;
 
 }
-
-/* 
-Service-Bereich
-*/
-
-/* .service-part {
-    max-width: 1300px;
-    height: 1000px;
-    margin: 0 auto;
-}
-.service-container,
-.service-container-grau  {
-    height: auto;
-    width: 33.333%;
-    float: left;
-    padding-top:150px;
-}
-
-.service-icon {
-    text-align: center;
-    font-size: 700%;
-    color: rgb(81, 81, 81);
-    margin-bottom: 10px;
-    
-}
-
-.service-text {
-    padding: 50px;
-    height: auto;
-    
-}
-
-.service-text h1 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.service-text p {
-    font-size: 150%;
-} */
 
 /* 
 Service-Bereich
@@ -146,9 +121,21 @@ Service-Bereich
 }
 .service, 
 .service-verkauf {
-    padding: 100px 150px;
+    padding: 100px 100px;
    
 }
+
+/* @media (max-width:845px) {
+    .service, 
+    .service-verkauf {
+        padding: 80px 50px;
+    }
+
+@media (max-width:450px) {
+    .service, 
+    .service-verkauf {
+        padding: 80px 40px;
+    } */
 
 .service-verkauf {
     background-color: rgb(253, 253, 253);
@@ -158,23 +145,28 @@ Service-Bereich
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
     justify-content:space-evenly;
    
 }
 
 .service-icon {
+    width: 150px;
     font-size: 700%;
-    flex-basis: 150px;
     text-align: center;
    
 }
 
+/* @media (max-width:845px) {
+    .service-icon{
+        font-size: 500%;
+        flex-basis: 150px;
+    } */
+
 .service-text {
-    width: 60%;
     height: auto;
     text-align: center;
+    max-width: 600px;
     
 }
 
@@ -235,7 +227,7 @@ Products-Bereich
 
 .dropdown-content {
     color: white;
-    padding: 0px 80px 0px 80px;
+    padding: 0px 150px 0px 150px;
     height: 0px;
     background-color:rgb(0, 0, 0, 0.9);
     overflow: auto;
@@ -328,18 +320,16 @@ Products-Bereich
 }
 
 .aboutUsContainer {
-    margin-right: 0px;
-    text-align: center;
-    max-width: 100%;
-    height: 450px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .roger,
 .nirmal {
-    float: left;
-    width: 50%;
-    height: 100%;
-    min-width: 250px;
+    min-width: 450px;
+    text-align: center;
+    padding-bottom: 85px;
 }
 
 .portrait{
@@ -383,14 +373,13 @@ Products-Bereich
 */
 
 .contact {
-    padding: 150px 150px;
+    padding: 150px 100px;
     background: linear-gradient(140deg, rgb(0, 0, 0), rgb(39, 39, 39),rgb(0, 0, 0));
 }
 
 .contactTitle {
     color: white;
     margin-top: 0px;
-    /* margin-bottom: 100px; */
     font-weight: lighter;
     text-align: center;
 }
@@ -404,23 +393,16 @@ Products-Bereich
 }
 
 .contactContainer {
-    text-align: center;
-    max-width: 100%;
-    height: 450px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     
 }
 .contactData,
 .googleMaps {
-    float: left;
-    width: 45%;
-    height: 100%;
-}
-
-.contactData {
-    margin-right: 30px;
-}
-.googleMaps {
-    margin-left: 30px;
+    min-width: 350px;
+    padding: 50px;
+    
 }
 
 .contact-icon {
@@ -460,13 +442,46 @@ font-size: 150%;
     margin-bottom: 0px;
 }
 
+.footer {
+    background-color:  rgb(255, 255, 255);
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: 0px;
+    font-size: 150%;
+    
+}
+
+.footer p {
+    color: rgb(0, 0, 0);
+}
+
+.footer a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.footer a:hover {
+    cursor: pointer;
+    color: rgb(254, 225, 153);
+}
+
+.footer .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+/*
+* Handelspartner
+*/
+
 .handelspartner {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1300px;
-    margin: 0 auto 0 auto;
+    margin: 70px auto 70px auto;
 }
 
 .partnerBlock {

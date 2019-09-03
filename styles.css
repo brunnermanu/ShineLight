@@ -38,7 +38,7 @@ h1, p {
    
 }
 
-@media (max-width:350px) {
+@media (max-width:400px) {
     .header {
         height: 350px;
         flex-flow: row wrap;
@@ -89,7 +89,7 @@ h1, p {
     
 }
 
-@media (max-width:800px) {
+@media (max-width:900px) {
     .header-navbar-links li {
         float: none;
     }
@@ -107,25 +107,19 @@ h1, p {
 }
 
 .header-brand {
-    height: 200px;
+    height: 150px;
     width: auto;
 } 
 
 @media (max-width:550px) {
     .header-brand {
-        height: 150px;
+        height: 100px;
        
     }
 }
 
-@media (max-width:414px) {
-    .header-brand {
-        height: 120px;
-       
-    }
-}
 
-@media (max-width:350px) {
+@media (max-width:400px) {
     .header-brand {
         height: 150px;
         text-align: center;
@@ -292,11 +286,12 @@ Products-Bereich
     box-shadow: none;
     border: none;
     font-size: 400%;
-    
-    
+    transition: all 1s ease-in-out;
   }  
 
-  
+  .dropbtn:focus {
+      outline: none;
+  }
 
 .dropdown-content {
     color: white;

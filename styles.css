@@ -38,7 +38,7 @@ h1, p {
    
 }
 
-@media (max-width:325px) {
+@media (max-width:350px) {
     .header {
         height: 350px;
         flex-flow: row wrap;
@@ -57,7 +57,7 @@ h1, p {
     }
 }
 
-@media (max-width:325px) {
+@media (max-width:350px) {
     .header-navbar-links {
         margin-top: 0px; 
     }
@@ -125,7 +125,7 @@ h1, p {
     }
 }
 
-@media (max-width:325px) {
+@media (max-width:350px) {
     .header-brand {
         height: 150px;
         text-align: center;

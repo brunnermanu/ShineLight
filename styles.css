@@ -47,9 +47,9 @@ h1, p {
     }
 }
 
-@media (max-width:350px) {
+@media (max-width:400px) {
     .header-navbar {
-        max-width: 210px;
+        width: 200px;
     }
 }
 
@@ -59,7 +59,7 @@ h1, p {
        padding-inline-start: 0px;
 }
 
-@media (max-width:800px) {
+@media (max-width:900px) {
     .header-navbar-links {
         margin-top: 30px; 
     }
@@ -96,12 +96,13 @@ h1, p {
         float: none;
     }
 }
-/* 
-@media (max-width:360px) {
+
+@media (max-width:400px) {
     .header-navbar-links li {
-        margin-left: 0px;
+       margin-left: 0px;
+       padding-left: 20px;
     }
-} */
+}
 
 .header-brand-wrapper {
     margin-left: 40px;
@@ -116,6 +117,7 @@ h1, p {
 @media (max-width:400px) {
     .header-brand-wrapper {
         text-align: center;
+        width: 300px;
     }
 }
 
@@ -171,10 +173,17 @@ h1, p {
     }
 }
 
-@media (max-width:312px) {
+@media (max-width:400px) {
     .header-img-text {
         padding-top: 100px;
         font-size: 250%;
+    }
+}
+
+@media (max-width:330px) {
+    .header-img-text {
+        padding-top: 100px;
+        font-size: 210%;
     }
 }
 
@@ -182,10 +191,6 @@ h1, p {
 Service-Bereich
 */
 
-.service-part {
-    max-width: 1300px;
-    margin: 0 auto 0 auto;
-}
 .service, 
 .service-verkauf {
     padding: 100px 100px;
@@ -216,6 +221,8 @@ Service-Bereich
     flex-wrap: wrap;
     align-items: center;
     justify-content:space-evenly;
+    max-width: 900px;
+    margin: 0 auto 0 auto;
    
 }
 
@@ -223,6 +230,7 @@ Service-Bereich
     width: 150px;
     font-size: 700%;
     text-align: center;
+    padding: 20px;
    
 }
 
@@ -259,6 +267,14 @@ Products-Bereich
 }
 
 .products-LED {
+    background-image: url("img/Kronleuchter.jpg");
+    height: 800px;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+}
+
+.products-Linearleuchten {
     background-image: url("img/LEDLeuchten.jpg");
     height: 800px;
     width: 100%;
@@ -485,6 +501,18 @@ Products-Bereich
     padding-bottom: 85px;
 }
 
+.roger a,
+.nirmal a {
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.roger a:hover,
+.nirmal a:hover {
+    text-decoration: underline;
+   
+}
+
 .portrait{
     height: 250px;
     border: solid 3px white;
@@ -599,6 +627,13 @@ Products-Bereich
     height: 2.5em;
 }
 
+.contact-methods li a {
+    text-decoration: none;
+ }
+
+.contact-methods li a:hover {
+   text-decoration: underline;
+}
 .contact-methods li .fa {
 font-size: 150%;
 }
@@ -633,6 +668,7 @@ font-size: 150%;
 .footer a{
     text-decoration: none;
     color: rgb(0, 0, 0);
+    transition: all 0.5s ease-in-out;
 }
 
 .footer a:hover {
@@ -699,6 +735,7 @@ font-size: 150%;
     height: 45px;
     width: 150px;
     border-radius: 10px;
+    transition: all 0.5s ease-in-out;
 }
 
 .partnerButton:hover {

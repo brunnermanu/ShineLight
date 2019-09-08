@@ -629,6 +629,8 @@ Products-Bereich
 
 .contact-methods li a {
     text-decoration: none;
+    margin: 0px;
+    color: white;
  }
 
 .contact-methods li a:hover {

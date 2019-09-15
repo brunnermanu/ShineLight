@@ -13,7 +13,7 @@ html {
 }
 
 html body {
-    font-family: 'Muli', sans-serif; 
+    font-family: 'Muli', sans-serif, 'Poiret One', cursive; 
     margin: 0px;
 }
 
@@ -146,7 +146,7 @@ h1, p {
 }
 
 .header-img {
-    background-image: url("img/Titelbilddunkel.png");
+    background-image: url("img/Wohnzimmerbeleuchtungdunkel.jpg");
     background-position: 50% 30%;
     background-size: cover;
     height: 700px;

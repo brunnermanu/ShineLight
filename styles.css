@@ -157,7 +157,7 @@ h1, p {
     .header-img{
         height: 200px;
         background-position: 40% 0%;
-        background-size: contain;
+        background-size: cover;
     }
 }
 
@@ -290,12 +290,29 @@ Products-Bereich
     background-size: cover;
 }
 
+@media (max-width:400px) {
+    .products,
+    .products-LED,
+    .products-Linearleuchten{
+        height: 400px;
+        width: 100%;
+        position: relative;
+        background-size: cover;
+    }
+}
+
 .products-text {
 
     color: rgb(255, 255, 255);
     text-align: center;
     padding-top: 5%;
     
+}
+
+@media (max-width:400px) {
+    .products-text {
+        font-size: 60%;
+    }
 }
 
 
@@ -322,6 +339,12 @@ Products-Bereich
     font-size: 400%;
     transition: all 1s ease-in-out;
   }  
+
+  @media (max-width:400px) {
+    .dropbtn {
+        font-size: 250%;
+    }
+}
 
   .dropbtn:focus {
       outline: none;

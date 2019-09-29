@@ -13,7 +13,7 @@ html {
 }
 
 html body {
-    font-family: 'Muli', sans-serif, 'Poiret One', cursive; 
+    font-family: 'Muli', sans-serif;
     margin: 0px;
 }
 
@@ -153,10 +153,18 @@ h1, p {
     background-attachment: fixed;
 }
 
+@media (max-width:400px) {
+    .header-img{
+        height: 200px;
+        background-position: 40% 0%;
+        background-size: contain;
+    }
+}
+
 .header-img-text {
     color: rgb(254, 225, 153);
-    font-weight: lighter;
     font-family: 'Poiret One', cursive;
+    font-weight: lighter;
     font-size: 500%;
     text-align: center;
     padding-top: 250px;
@@ -175,14 +183,14 @@ h1, p {
 
 @media (max-width:400px) {
     .header-img-text {
-        padding-top: 100px;
+        padding-top: 60px;
         font-size: 250%;
     }
 }
 
 @media (max-width:330px) {
     .header-img-text {
-        padding-top: 100px;
+        padding-top: 60px;
         font-size: 210%;
     }
 }
@@ -696,6 +704,15 @@ font-size: 150%;
     background-attachment: fixed;
 }
 
+@media (max-width:400px) {
+    .header-img-handelspartner{
+        height: 200px;
+        background-position: 40% 0%;
+        background-size: contain;
+        background-attachment: none;
+    }
+}
+
 .handelspartner {
     display: flex;
     flex-direction: row;
@@ -760,6 +777,14 @@ font-size: 150%;
     background-size: cover;
     height: 700px;
     background-attachment: fixed;
+}
+
+@media (max-width:400px) {
+    .header-img-gallery{
+        height: 200px;
+        background-position: 40% 0%;
+        background-size: contain;
+    }
 }
 
 .gallery {

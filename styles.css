@@ -760,7 +760,9 @@ font-size: 150%;
 }
 
 .partnerLogo-Bild {
-    height: 100%;
+    max-height: 100px;
+    max-width: 250px;
+    margin: auto
 
 }
 
